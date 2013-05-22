@@ -1,0 +1,10 @@
+<skinpartwidget screenname="InfoBar">
+   <ePixmap pixmap="MetrixHD/buttons/red.png" position="261,685" size="30,35" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/green.png" position="446,685" size="30,35" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="636,685" size="30,35" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/blue.png" position="818,685" size="30,35" alphatest="blend" />
+    <widget name="key_red" position="301,690" zPosition="1" size="130,25" font="RegularLight; 20" backgroundColor="metrixBackground" transparent="1" valign="top" />
+    <widget name="key_green" position="487,690" zPosition="1" size="130,25" font="RegularLight; 20" backgroundColor="metrixBackground" transparent="1" valign="top" />
+    <widget name="key_yellow" position="677,690" zPosition="1" size="130,25" font="RegularLight; 20" backgroundColor="metrixBackground" transparent="1" valign="top" />
+    <widget name="key_blue" position="859,690" zPosition="1" size="130,25" font="RegularLight; 20" backgroundColor="metrixBackground" transparent="1" halign="left" valign="top" />
+</skinpartwidget> 

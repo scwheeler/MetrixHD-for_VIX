@@ -1,0 +1,23 @@
+<skinpartwidget screenname="SecondInfoBar">
+ <eLabel text="SNR" position="121,528" size="53,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" valign="top" foregroundColor="metrixForeground" halign="right"/>
+<widget source="session.FrontendStatus" render="Label" position="438,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixForeground" valign="top">
+<convert type="FrontendInfo">SNR</convert>
+</widget>
+<widget source="session.FrontendStatus" render="Progress" position="181,540" size="250,5" zPosition="100" pixmap="MetrixHD/colors/00149baf.png" transparent="1">
+<convert type="FrontendInfo">SNR</convert>
+</widget>
+<eLabel text="AGC" position="516,528" size="60,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" valign="top" foregroundColor="metrixForeground" halign="right"/>
+<widget source="session.FrontendStatus" render="Label" position="837,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixForeground" valign="top">
+<convert type="FrontendInfo">AGC</convert>
+</widget>
+<widget source="session.FrontendStatus" render="Progress" position="581,540" size="250,5" zPosition="1" pixmap="MetrixHD/colors/00149baf.png" transparent="1">
+<convert type="FrontendInfo">AGC</convert>
+</widget>
+<eLabel position="181,542" size="250,1" backgroundColor="metrixForeground"/>
+<eLabel position="581,542" size="250,1" backgroundColor="metrixForeground"/>
+<widget source="session.CurrentService" render="Label" position="935,528" size="450,33" font="Regular; 12" halign="left" backgroundColor="metrixBackground" transparent="1" valign="center">
+  <convert type="CryptoInfo">VerboseInfo</convert>
+</widget>
+<eLabel name="HealthWidgetBG" position="114,525" size="1052,35" backgroundColor="metrixBackground2" zPosition="-20"/> -->
+<!-- HEALTH WIDGET */ -->
+</skinpartwidget> 

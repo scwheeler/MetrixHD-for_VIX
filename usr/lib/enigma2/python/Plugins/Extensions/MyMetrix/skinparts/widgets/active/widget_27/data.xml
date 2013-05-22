@@ -4,7 +4,7 @@
     <convert type="ClockToText">Default</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="921,77" size="148,29" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
-    <convert type="ClockToText">Format:%e. %b</convert>
+    <convert type="ClockToText">Format:%e. %B</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="944,46" size="125,30" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
     <convert type="ClockToText">Format:%A</convert>

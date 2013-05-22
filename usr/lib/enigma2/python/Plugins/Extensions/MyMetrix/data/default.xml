@@ -2,6 +2,7 @@
   <!-- MetrixHD v2.3 by iMaxxx for VTI v5.0.xxx -->
   <!-- recommended to use only with XPicons (transparent light) -->
   <!-- You can modify and redistribute it as long as you keep this License and the original author for the skin and all of your modifications -->
+  <!-- MOD by scwheeler for OpenVIX and from http://www.world-of-satellite.com -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -304,6 +305,10 @@
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+        <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/camd.png" position="310,85" size="256,256" transparent="1" zPosition="-1" alphatest="blend">
+      <convert type="MenuEntryCompare">cam_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/look.png" position="310,85" size="256,256" alphatest="blend" zPosition="1">
       <convert type="MenuEntryCompare">parental_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -322,6 +327,10 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/setup.png" position="310,85" size="256,256" alphatest="blend" zPosition="1">
       <convert type="MenuEntryCompare">software_manager</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+        <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/softupdate.png" position="310,85" size="256,256" alphatest="blend" transparent="1" zPosition="1">
+      <convert type="MenuEntryCompare">software_update</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel name="" position="645,51" zPosition="-11" size="412,565" backgroundColor="metrixBackground" foregroundColor="metrixBackground" />
@@ -358,8 +367,20 @@
       <convert type="MenuEntryCompare">about_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-  </screen>
-  <screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+      <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/networksetup.png" position="310,85" size="256,256" alphatest="blend">
+      <convert type="MenuEntryCompare">SystemNetworkInfo</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/hdd.png" position="310,85" size="256,256" alphatest="blend">
+      <convert type="MenuEntryCompare">Devices</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/mem.png" position="310,85" size="256,256" alphatest="blend">
+      <convert type="MenuEntryCompare">SystemMemoryInfo</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+</screen>
+<screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="264,51" zPosition="-1" size="340,320" backgroundColor="metrixBackground" transparent="0" />
     <!-- /*ClockWidget-->
     <widget source="global.CurrentTime" render="Label" position="450,401" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
@@ -440,6 +461,10 @@
       <convert type="MenuEntryCompare">timer_edit</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+        <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/timer.png" position="310,85" size="256,256" transparent="1" alphatest="blend">
+      <convert type="MenuEntryCompare">timer_menu</convert>
+      <convert type="ConditionalShowHide" />
+      </widget>
     <widget source="menu" render="Pixmap" pixmap="MetrixHD/icons/media.png" position="310,85" size="256,256" alphatest="blend">
       <convert type="MenuEntryCompare">media_player</convert>
       <convert type="ConditionalShowHide" />
@@ -1854,8 +1879,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!-- /*Buttons-->
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="217,0" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="434,0" size="30,40" alphatest="blend" />
-    <widget name="red" position="258,10" size="160,30" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="green" position="472,10" size="160,30" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_red" position="258,10" size="160,30" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_green" position="472,10" size="160,30" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <!--Button */-->
   </screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
