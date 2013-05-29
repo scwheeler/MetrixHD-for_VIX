@@ -595,7 +595,7 @@
       <convert type="MenuEntryCompare">setup_selection</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget alphatest="blend" pixmap="MetrixHD/icons/plugin.png" position="310,85" render="Pixmap" size="256,256" source="menu">
+    <widget alphatest="blend" pixmap="MetrixHD/icons/plugin2.png" position="310,85" render="Pixmap" size="256,256" source="menu">
       <convert type="MenuEntryCompare">plugin_selection</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
