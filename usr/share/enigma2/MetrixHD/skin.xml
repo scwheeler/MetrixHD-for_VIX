@@ -15,10 +15,10 @@
     <color name="foreground" value="#00ffffff"/>
     <color name="green" value="#00389416"/>
     <color name="grey" value="#00bbbbbb"/>
-    <color name="metrixAccent1" value="#00bbbbbb"/>
-    <color name="metrixAccent2" value="#00999999"/>
-    <color name="metrixBackground" value="#3c000000"/>
-    <color name="metrixBackground2" value="#3c111111"/>
+    <color name="metrixAccent1" value="#00ffffff"/>
+    <color name="metrixAccent2" value="#00ffffff"/>
+    <color name="metrixBackground" value="#28000000"/>
+    <color name="metrixBackground2" value="#28444444"/>
     <color name="metrixBlue" value="#001677d2"/>
     <color name="metrixCyan" value="#00149baf"/>
     <color name="metrixDeepGrey" value="#00222222"/>
@@ -27,8 +27,8 @@
     <color name="metrixOrange" value="#00c3461b"/>
     <color name="metrixPink" value="#00a61d4d"/>
     <color name="metrixPreBlack2" value="#40000000"/>
-    <color name="metrixPreTrans" value="#dcffffff"/>
-    <color name="metrixPreTrans2" value="#dcffffff"/>
+    <color name="metrixPreTrans" value="#c8bbbbbb"/>
+    <color name="metrixPreTrans2" value="#c8bbbbbb"/>
     <color name="metrixPurple" value="#006c0aab"/>
     <color name="metrixRed" value="#00911d10"/>
     <color name="metrixSelection" value="#0x01BA1E2"/>
@@ -126,20 +126,7 @@
     <color color="metrixForeground" name="WindowTitleForeground"/>
   </windowstyle>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1283,723" title="InfoBar">
-    
-<!-- /* ClockWidget -->
-  <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="1081,31" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="921,77" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%e. %b</convert>
-  </widget>
-  <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="944,46" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
-  <eLabel backgroundColor="metrixBackground" position="913,40" size="320,70" transparent="0" zPosition="-1"/>
-  <!--ClockWidget */-->
-
+  
 
 <!-- /* WEATHER WIDGET  -->
 <eLabel backgroundColor="metrixBackground" position="46,40" size="213,70"/>
@@ -201,7 +188,7 @@
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget pixmap="MetrixHD/colors/00149baf.png" position="288,614" render="Progress" size="950,3" source="session.Event_Now" transparent="1" zPosition="7">
+  <widget pixmap="MetrixHD/colors/001BA1E2.png" position="288,614" render="Progress" size="950,3" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" noWrap="1" position="1091,617" render="Label" size="75,28" source="session.Event_Next" transparent="1" valign="top">
@@ -230,6 +217,20 @@
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" name="key_green" position="487,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" name="key_yellow" position="677,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" halign="left" name="key_blue" position="859,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
+
+<!--  /* ClockWidget  -->
+<eLabel backgroundColor="metrixBackground2" position="962,43" size="114,66" transparent="0" zPosition="-2"/>
+<widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="1086,31" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="967,77" render="Label" size="102,29" source="global.CurrentTime" transparent="1">
+<convert type="ClockToText">Format:%e. %b</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" noWrap="1" position="964,47" render="Label" size="104,30" source="global.CurrentTime" transparent="1">
+<convert type="ClockToText">Format:%A</convert>
+</widget>
+<eLabel backgroundColor="metrixBackground" position="1076,40" size="158,72" transparent="0" zPosition="-1"/>
+<!-- ClockWidget */ -->
 </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1281,723" title="InfoBar">
       <!-- /* EPGWidget -->
@@ -248,19 +249,6 @@
     <eLabel backgroundColor="metrixBackground" name="NowBG" position="65,128" size="565,376" zPosition="-1"/>
     <eLabel backgroundColor="metrixBackground2" name="NextBG" position="630,154" size="585,329"/>
     <!-- EPGWidget */-->
-  
-<!-- /* ClockWidget -->
-  <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="1081,31" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="921,77" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%e. %B</convert>
-  </widget>
-  <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="944,46" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
-  <eLabel backgroundColor="metrixBackground" position="913,40" size="320,70" transparent="0" zPosition="-1"/>
-  <!--ClockWidget */-->
 
 <!-- /* WEATHER WIDGET  -->
 <eLabel backgroundColor="metrixBackground" position="46,40" size="213,70"/>
@@ -316,7 +304,7 @@
 <convert type="EventTime">Remaining</convert>
 <convert type="RemainingToText">InMinutes</convert>
 </widget>
-<widget pixmap="MetrixHD/colors/00149baf.png" position="288,614" render="Progress" size="950,3" source="session.Event_Now" transparent="1" zPosition="7">
+<widget pixmap="MetrixHD/colors/001BA1E2.png" position="288,614" render="Progress" size="950,3" source="session.Event_Now" transparent="1" zPosition="7">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" noWrap="1" position="1091,617" render="Label" size="75,28" source="session.Event_Next" transparent="1" valign="top">
@@ -367,6 +355,20 @@
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" name="key_green" position="487,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" name="key_yellow" position="677,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
     <widget backgroundColor="metrixBackground" font="RegularLight; 20" halign="left" name="key_blue" position="859,690" size="130,25" transparent="1" valign="top" zPosition="1"/>
+
+<!--  /* ClockWidget  -->
+<eLabel backgroundColor="metrixBackground2" position="962,43" size="114,66" transparent="0" zPosition="-2"/>
+<widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="1086,31" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="967,77" render="Label" size="102,29" source="global.CurrentTime" transparent="1">
+<convert type="ClockToText">Format:%e. %b</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" noWrap="1" position="964,47" render="Label" size="104,30" source="global.CurrentTime" transparent="1">
+<convert type="ClockToText">Format:%A</convert>
+</widget>
+<eLabel backgroundColor="metrixBackground" position="1076,40" size="158,72" transparent="0" zPosition="-1"/>
+<!-- ClockWidget */ -->
 </screen>
   <!-- EMC 1280 EMCMediaCenter -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar">
@@ -464,7 +466,7 @@
     <widget font="SetrixHD;16" foregroundColor="metrixForeground" halign="center" name="ecmInfo" noWrap="1" position="18,44" size="560,25" transparent="1" valign="center" zPosition="3"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Volume" position="49,40" size="320,70" title="Volume">
-    <widget name="Volume" pixmap="MetrixHD/colors/00149baf.png" position="70,32" size="170,5" transparent="1" zPosition="3"/>
+    <widget name="Volume" pixmap="MetrixHD/colors/001BA1E2.png" position="70,32" size="170,5" transparent="1" zPosition="3"/>
     <ePixmap alphatest="blend" pixmap="MetrixHD/icons/volume.png" position="3,3" size="64,64" transparent="0" zPosition="1"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD;40" foregroundColor="metrixForeground" halign="left" position="246,2" render="VVolumeText" size="85,69" source="global.CurrentTime" transparent="1" valign="center" zPosition="20"/>
     <eLabel backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" position="70,34" size="170,1"/>
@@ -1279,7 +1281,7 @@
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="metrixBackground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="62,258" render="Progress" size="315,5" source="session.Event_Now" transparent="1" zPosition="1">
+    <widget backgroundColor="metrixBackground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="62,258" render="Progress" size="315,5" source="session.Event_Now" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" halign="center" name="channel" position="62,197" size="320,50" transparent="1"/>
@@ -1341,9 +1343,9 @@
     <eLabel backgroundColor="metrixBackground2" position="794,50" size="430,600" zPosition="-10"/>
     <eLabel backgroundColor="metrixBackground" font="SetrixHD;35" position="70,47" size="502,43" text="EPG Selection" transparent="1"/>
     <ePixmap pixmap="MetrixHD/colors/00ffffff.png" position="70,154" size="700,3" zPosition="1"/>
-    <widget name="now_button_sel" pixmap="MetrixHD/colors/00149baf.png" position="70,150" size="150,5" zPosition="2"/>
-    <widget name="next_button_sel" pixmap="MetrixHD/colors/00149baf.png" position="220,150" size="150,5" zPosition="2"/>
-    <widget name="more_button_sel" pixmap="MetrixHD/colors/00149baf.png" position="370,150" size="150,5" zPosition="2"/>
+    <widget name="now_button_sel" pixmap="MetrixHD/colors/001BA1E2.png" position="70,150" size="150,5" zPosition="2"/>
+    <widget name="next_button_sel" pixmap="MetrixHD/colors/001BA1E2.png" position="220,150" size="150,5" zPosition="2"/>
+    <widget name="more_button_sel" pixmap="MetrixHD/colors/001BA1E2.png" position="370,150" size="150,5" zPosition="2"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 25" halign="center" name="now_text" position="70,117" size="150,30" text="NOW" transparent="1" zPosition="3"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 25" halign="center" name="next_text" position="220,117" size="150,30" text="NEXT" transparent="1" zPosition="3"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 25" halign="center" name="more_text" position="370,117" size="150,30" text="MORE" transparent="1" zPosition="3"/>
@@ -1385,7 +1387,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="146,143" render="Progress" size="990,5" source="Event" transparent="1" zPosition="20">
+    <widget backgroundColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="146,143" render="Progress" size="990,5" source="Event" transparent="1" zPosition="20">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="metrixBackground" font="Regular; 19" position="70,163" render="Label" size="1153,139" source="Event" transparent="1" valign="top">
@@ -1394,13 +1396,13 @@
     <eLabel backgroundColor="metrixAccent1" position="146,145" size="990,1"/>
     <widget name="timeline_text" position="0,305" selectionDisabled="1" size="1280,25" transparent="1"/>
     <widget EntryBackgroundColor="metrixBackground" EntryBackgroundColorSelected="metrixAccent1" EntryBorderColor="metrixForeground" itemHeight="60" name="list" position="70,335" scrollbarMode="showOnDemand" size="1160,295" transparent="1"/>
-    <widget name="timeline0" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget name="timeline1" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget name="timeline2" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget name="timeline3" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget name="timeline4" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget name="timeline5" pixmap="MetrixHD/colors/00149baf.png" position="0,398" size="1,230" zPosition="1"/>
-    <widget alphatest="blend" name="timeline_now" pixmap="MetrixHD/colors/00149baf.png" position="0,330" size="5,295" zPosition="2"/>
+    <widget name="timeline0" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget name="timeline1" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget name="timeline2" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget name="timeline3" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget name="timeline4" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget name="timeline5" pixmap="MetrixHD/colors/001BA1E2.png" position="0,398" size="1,230" zPosition="1"/>
+    <widget alphatest="blend" name="timeline_now" pixmap="MetrixHD/colors/001BA1E2.png" position="0,330" size="5,295" zPosition="2"/>
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40"/>
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_green.png" position="265,635" size="30,40"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" name="key_red" position="105,637" size="160,25" transparent="1" zPosition="1"/>
@@ -1593,7 +1595,7 @@
     <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="right" noWrap="1" position="262,425" render="Label" size="119,32" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget pixmap="MetrixHD/colors/00149baf.png" position="71,410" render="Progress" size="300,5" source="session.CurrentService" transparent="1" zPosition="1">
+    <widget pixmap="MetrixHD/colors/001BA1E2.png" position="71,410" render="Progress" size="300,5" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_menu.png" position="1130,631" size="81,40" transparent="1" zPosition="10"/>
@@ -2090,7 +2092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="LCD; 38" foregroundColor="metrixForeground" halign="left" position="268,106" render="Label" size="720,40" source="RdsDecoder" transparent="1">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
-    <widget pixmap="MetrixHD/colors/00149baf.png" position="487,163" render="Progress" size="370,13" source="session.Event_Now" transparent="1" zPosition="5">
+    <widget pixmap="MetrixHD/colors/001BA1E2.png" position="487,163" render="Progress" size="370,13" source="session.Event_Now" transparent="1" zPosition="5">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" noWrap="1" position="230,23" render="Label" size="240,28" source="session.CurrentService" transparent="1">
@@ -3795,7 +3797,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
+    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel backgroundColor="metrixForeground" name="new eLabel" position="110,521" size="120,1"/>
@@ -3836,18 +3838,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="Regular;15" halign="right" name="date" position="1013,49" size="160,28" transparent="1"/>
     <widget backgroundColor="metrixBackground" name="timeline_text" position="36,49" size="1140,28" transparent="1"/>
     <widget CoolBackCol="metrixBackground" CoolBackColSel="metrixSelection" CoolBackRecColSel="#a90707" CoolBorderColL="metrixBackground" CoolBorderColR="metrixBackground" CoolFontCol="metrixForeground" CoolFontColSel="metrixForeground" CoolNowBackCol="metrixBackground" CoolNowBackColSel="metrixSelection" CoolNowFontCol="metrixForeground" CoolNowFontColSel="metrixForeground" CoolTVBackCol="metrixBackground" CoolTVBackColSel="metrixSelection" name="list" position="36,75" scrollbarMode="showNever" size="1140,420" transparent="1"/>
-    <widget name="timeline0" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline1" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline2" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline3" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline4" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline5" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/00149baf.png" position="35,75" size="5,420" zPosition="2"/>
+    <widget name="timeline0" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline1" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline2" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline3" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline4" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline5" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/001BA1E2.png" position="35,75" size="5,420" zPosition="2"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" halign="right" position="8,501" render="Label" shadowColor="metrixBackground" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
+    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel backgroundColor="metrixForeground" name="new eLabel" position="110,521" size="120,1"/>
@@ -3890,7 +3892,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
+    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel backgroundColor="metrixForeground" name="new eLabel" position="110,521" size="120,1"/>
@@ -3931,18 +3933,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="Regular;15" halign="right" name="date" position="1013,49" size="160,28" transparent="1"/>
     <widget backgroundColor="metrixBackground" name="timeline_text" position="36,49" size="1140,28" transparent="1"/>
     <widget CoolBackCol="metrixBackground" CoolBackColSel="metrixSelection" CoolBackRecColSel="#a90707" CoolBorderColL="metrixBackground" CoolBorderColR="metrixBackground" CoolFontCol="metrixForeground" CoolFontColSel="metrixForeground" CoolNowBackCol="metrixBackground" CoolNowBackColSel="metrixSelection" CoolNowFontCol="metrixForeground" CoolNowFontColSel="metrixForeground" CoolTVBackCol="metrixBackground" CoolTVBackColSel="metrixSelection" name="list" position="36,75" scrollbarMode="showNever" size="1140,420" transparent="1"/>
-    <widget name="timeline0" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline1" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline2" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline3" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline4" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline5" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/00149baf.png" position="35,75" size="5,420" zPosition="2"/>
+    <widget name="timeline0" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline1" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline2" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline3" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline4" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline5" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/001BA1E2.png" position="35,75" size="5,420" zPosition="2"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" halign="right" position="8,501" render="Label" shadowColor="metrixBackground" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
+    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel backgroundColor="metrixForeground" name="new eLabel" position="110,521" size="120,1"/>
@@ -3998,7 +4000,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" halign="left" position="16,13" render="Label" shadowColor="#00605f5e" size="505,33" source="Event" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget borderColor="metrixAccent2" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="131,66" render="Progress" size="270,5" source="Event" transparent="1" zPosition="2">
+    <widget borderColor="metrixAccent2" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="131,66" render="Progress" size="270,5" source="Event" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="metrixBackground" font="Regular;20" foregroundColor="metrixForeground" position="14,97" render="Label" shadowColor="#00605f5e" size="509,267" source="Event" transparent="1" valign="top" zPosition="1">
@@ -4066,18 +4068,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="Regular;15" halign="right" name="date" position="1013,49" size="160,28" transparent="1"/>
     <widget backgroundColor="metrixBackground" name="timeline_text" position="36,49" size="1140,28" transparent="1"/>
     <widget CoolBackCol="metrixBackground" CoolBackColSel="metrixSelection" CoolBackRecColSel="#a90707" CoolBorderColL="metrixBackground" CoolBorderColR="metrixBackground" CoolFontCol="metrixForeground" CoolFontColSel="metrixForeground" CoolNowBackCol="metrixBackground" CoolNowBackColSel="metrixSelection" CoolNowFontCol="metrixForeground" CoolNowFontColSel="metrixForeground" CoolTVBackCol="metrixBackground" CoolTVBackColSel="metrixSelection" name="list" position="36,75" scrollbarMode="showNever" size="1140,420" transparent="1"/>
-    <widget name="timeline0" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline1" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline2" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline3" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline4" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline5" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/00149baf.png" position="35,75" size="5,420" zPosition="2"/>
+    <widget name="timeline0" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline1" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline2" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline3" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline4" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline5" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/001BA1E2.png" position="35,75" size="5,420" zPosition="2"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 26" halign="right" position="8,501" render="Label" shadowColor="metrixBackground" size="100,36" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/00149baf.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
+    <widget borderColor="metrixForeground" borderWidth="0" pixmap="MetrixHD/colors/001BA1E2.png" position="110,520" render="Progress" size="120,3" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel backgroundColor="metrixForeground" name="new eLabel" position="110,521" size="120,1"/>
@@ -4121,7 +4123,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget pixmap="MetrixHD/colors/00149baf.png" position="60,171" render="Progress" size="325,5" source="Event" transparent="1" zPosition="1">
+    <widget pixmap="MetrixHD/colors/001BA1E2.png" position="60,171" render="Progress" size="325,5" source="Event" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget backgroundColor="metrixBackground" font="Regular; 22" foregroundColor="metrixForeground" halign="right" position="1083,64" render="Label" size="128,30" source="Event" transparent="1">
@@ -4168,13 +4170,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="metrixBackground" font="Regular;15" halign="right" name="date" position="1013,49" size="160,28" transparent="1"/>
     <widget backgroundColor="metrixBackground" name="timeline_text" position="36,49" size="1140,28" transparent="1"/>
     <widget CoolBackCol="metrixBackground" CoolBackColSel="metrixSelection" CoolBackRecColSel="#a90707" CoolBorderColL="metrixBackground" CoolBorderColR="metrixBackground" CoolFontCol="metrixForeground" CoolFontColSel="metrixForeground" CoolNowBackCol="metrixBackground" CoolNowBackColSel="metrixSelection" CoolNowFontCol="metrixForeground" CoolNowFontColSel="metrixForeground" CoolTVBackCol="metrixBackground" CoolTVBackColSel="metrixSelection" name="list" position="36,75" scrollbarMode="showNever" size="1140,452" transparent="1"/>
-    <widget name="timeline0" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline1" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline2" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline3" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline4" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget name="timeline5" pixmap="MetrixHD/colors/00149baf.png" position="0,140" size="0,0" zPosition="1"/>
-    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/00149baf.png" position="115,75" size="5,450" zPosition="2"/>
+    <widget name="timeline0" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline1" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline2" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline3" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline4" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget name="timeline5" pixmap="MetrixHD/colors/001BA1E2.png" position="0,140" size="0,0" zPosition="1"/>
+    <widget alphatest="on" name="timeline_now" pixmap="MetrixHD/colors/001BA1E2.png" position="115,75" size="5,450" zPosition="2"/>
     <widget backgroundColor="metrixBackground" font="Regular;17" position="36,538" render="Label" shadowColor="metrixBackground" size="1140,68" source="Event" transparent="1" valign="top" zPosition="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -4635,8 +4637,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="metrixBackground" font="SetrixHD;35" position="70,47" size="800,40" text="VLC Video Player" transparent="1"/>
     <eLabel backgroundColor="metrixBackground" font="SetrixHD;26" halign="center" position="830,120" size="410,29" text="Vlc-Media file overview" transparent="1"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="center" position="830,160" render="Label" size="410,72" source="Title" transparent="1"/>
-    <widget alphatest="blend" name="filelist_button_sel" pixmap="MetrixHD/colors/00149baf.png" position="80,138" size="150,5" zPosition="3"/>
-    <widget alphatest="blend" name="playlist_button_sel" pixmap="MetrixHD/colors/00149baf.png" position="230,138" size="150,5" zPosition="3"/>
+    <widget alphatest="blend" name="filelist_button_sel" pixmap="MetrixHD/colors/001BA1E2.png" position="80,138" size="150,5" zPosition="3"/>
+    <widget alphatest="blend" name="playlist_button_sel" pixmap="MetrixHD/colors/001BA1E2.png" position="230,138" size="150,5" zPosition="3"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="center" name="filelist_text" position="80,112" size="150,23" transparent="1" zPosition="4"/>
     <widget backgroundColor="metrixBackground" font="SetrixHD; 20" halign="center" name="playlist_text" position="230,112" size="150,23" transparent="1" zPosition="4"/>
     <eLabel backgroundColor="metrixAccent1" position="70,143" size="720,464" zPosition="1"/>
@@ -6832,21 +6834,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!--ClockWidget */-->
 <widget alphatest="blend" position="112,61" render="Picon" size="220,132" source="Service" transparent="12" zPosition="2"> ?      <convert type="MovieReference"/>
     </widget>
-  </screen><screen backgroundColor="metrixBackground" flags="wfNoBorder" name="TimeshiftState" position="center,39" size="420,70" zPosition="2">
-  <widget alphatest="on" name="statusicon" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" position="center,10" size="20,20" zPosition="5"/>
-  <widget backgroundColor="metrixBackground" font="Regular;17" foregroundColor="white" halign="left" name="speed" position="175,7" size="90,20" transparent="1" zPosition="5"/>
-  <widget backgroundColor="metrixBackground" font="Regular;20" foregroundColor="white" halign="left" position="15,5" render="Label" size="200,27" source="session.CurrentService">
+  </screen><screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="0,160" size="1280,400">
+<eLabel backgroundColor="metrixBackground2" name="StatussBar" position="center,346" size="860,54" zPosition="-1"/>
+  <widget position="center,385" render="Progress" size="620,5" source="session.CurrentService" transparent="1" zPosition="5">
     <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget backgroundColor="metrixBackground" font="Regular;20" foregroundColor="white" halign="right" position="283,5" render="Label" size="120,27" source="session.CurrentService">
-    <convert type="ServicePosition">Length</convert>
-  </widget>
-  <widget alphatest="on" name="PTSSeekBack" pixmap="slider_back.png" position="15,40" size="390,20" zPosition="1"/>
-  <widget alphatest="on" name="PTSSeekPointer" pixmap="position_pointer2.png" position="0,33" size="19,24" zPosition="3"/>
-  <widget pixmap="p_bar_A.png" position="15,37" render="Progress" size="390,10" source="session.CurrentService" transparent="1" zPosition="2">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget backgroundColor="metrixBackground" font="Regular;18" foregroundColor="white" halign="center" name="eventname" position="60,49" size="320,20" zPosition="4"/>
+<widget backgroundColor="metrixBackground2" font="Regular; 30" foregroundColor="metrixForeground" halign="right" position="211,351" render="Label" size="112,32" source="session.CurrentService">
+<convert type="ServicePosition">Position,ShowHours</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 30" foregroundColor="metrixForeground" halign="left" position="958,351" render="Label" size="110,32" source="session.CurrentService">
+<convert type="ServicePosition">Length,ShowHours</convert>
+</widget>
+<widget backgroundColor="metrixBackground2" font="Regular; 20" foregroundColor="metrixAccent1" halign="center" name="eventname" position="center,351" size="455,32" valign="center" zPosition="4">
+</widget>
+      <widget alphatest="on" name="statusicon" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" position="center,45" size="256,256" zPosition="5"/>
+  <widget backgroundColor="transparent" font="Regular;140" foregroundColor="white" halign="left" name="speed" position="337,74" size="200,200" transparent="1" zPosition="5"/>
+    <eLabel backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" name="new eLabel" position="center,387" size="620,1" zPosition="1"/>
 </screen><screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="1,1" size="1280,720" title="Channel Selection">
   <eLabel backgroundColor="metrixBackground" position="51,51" size="340,525" zPosition="-10"/>
 <eLabel backgroundColor="metrixBackground" position="416,51" size="810,619" zPosition="-1"/>
