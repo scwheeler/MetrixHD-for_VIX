@@ -1,6 +1,6 @@
-MetrixHD-for_VIX
+MetrixHD for VIX
 ================
 
-Original SKin by iMaxxx
+Original Skin by iMaxxx
 
 Modded for Vix by scwheeler
