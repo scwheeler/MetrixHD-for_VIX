@@ -735,7 +735,7 @@
   <eLabel text="Channel Selection" position="10,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
   <widget source="Title" render="Label" position="425,55" size="790,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
   <eLabel position="117,260" size="206,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-  <widget name="list" position="423,107" size="787,510" scrollbarMode="showNever" colorServiceDescription="metrixAccent2" colorServiceDescriptionSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;26" serviceNameFont="SetrixHD;26" serviceInfoFont="Regular;22" transparent="1" backgroundColor="metrixBackground" itemHeight="50" />
+  <widget name="list" position="423,107" size="787,510" scrollbarMode="showNever" colorServiceDescription="metrixAccent2" colorServiceName="metrixAccent2" colorServiceDescriptionSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;26" serviceNameFont="SetrixHD;26" serviceInfoFont="Regular;22" transparent="1" backgroundColor="metrixBackground" itemHeight="50" />
   <widget source="ServiceEvent" render="Label" position="62,197" size="320,50" font="SetrixHD; 30" backgroundColor="metrixBackground" transparent="1" valign="bottom" noWrap="1">
     <convert type="EventName">Name</convert>
   </widget>
