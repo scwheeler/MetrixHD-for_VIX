@@ -325,9 +325,13 @@
       <convert type="MenuEntryCompare">software_manager</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
+    <widget alphatest="blend" pixmap="MetrixHD/icons/softupdate.png" position="310,85" render="Pixmap" size="256,256" source="menu" transparent="1" zPosition="1">
+      <convert type="MenuEntryCompare">software_update</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget alphatest="blend" pixmap="MetrixHD/icons/vixmenu.png" position="310,85" render="Pixmap" size="256,256" source="menu">
-      <convert type="MenuEntryCompare">vixmenu_screen</convert>
-      <convert type="ConditionalShowHide"/>
+      <convert type="MenuEntryCompare">vix_menu</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
     <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,51" size="412,565" zPosition="-11"/>
   </screen>
