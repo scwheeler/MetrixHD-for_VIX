@@ -1568,19 +1568,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="session.CurrentService" render="Label" position="3,581" size="137,56" font="SetrixHD; 40" halign="right" valign="top" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent2">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <!-- /*ClockWidget-->
-    <widget source="global.CurrentTime" render="Label" position="1081,31" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="921,73" size="148,29" font="SetrixHD; 20" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
-      <convert type="ClockToText">Format:%e. %b</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="943,45" size="125,30" font="SetrixHD; 20" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-    <eLabel name="new eLabel" position="149,670" size="980,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" zPosition="-1" />
-    <eLabel position="913,40" zPosition="-1" size="320,70" backgroundColor="metrixBackground" transparent="0" />
-    <!--ClockWidget */-->
+<!-- /* ClockWidget -->
+<eLabel position="962,43" zPosition="-2" size="114,66" backgroundColor="metrixBackground2" transparent="0"/>
+<widget source="global.CurrentTime" render="Label" position="1086,31" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="967,77" size="102,29" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+<convert type="ClockToText">Format:%e. %b</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="964,47" size="104,30" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1" noWrap="1">
+<convert type="ClockToText">Format:%A</convert>
+</widget>
+<eLabel position="1076,40" zPosition="-1" size="158,72" backgroundColor="metrixBackground" transparent="0"/>
+    <!-- ClockWidget */ -->
     <widget source="session.CurrentService" render="Label" position="30,416" size="1250,256" font="SetrixHD; 140" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" zPosition="-99">
       <convert type="ServiceName">Name</convert>
     </widget>
