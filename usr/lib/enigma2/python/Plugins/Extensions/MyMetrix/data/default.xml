@@ -6776,12 +6776,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- ##Vix Common interface## -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VIXSoftcamManager" position="0,0" size="1280,720" title="Softcam Setup">
-    <eLabel backgroundColor="metrixAccent1" name="new eLabel" position="462,119" size="720,2" />
-    <eLabel backgroundColor="metrixBackground" position="52,147" size="340,525" zPosition="-10" />
-    <widget backgroundColor="metrixPreTrans2" font="SetrixHD; 130" foregroundColor="metrixPreTrans2" position="10,561" size="1273,296" source="Title" transparent="1" valign="top" zPosition="-10" noWrap="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 32" position="460,63" render="Label" size="759,65" source="Title" transparent="1" />
-    <widget name="waitingtext" position="0,0" size="0,0" />
-    <eLabel backgroundColor="metrixBackground" position="417,51" size="810,621" zPosition="-10" />
+    <eLabel backgroundColor="metrixAccent1" name="new eLabel" position="462,119" size="720,2"/>
+    <eLabel backgroundColor="metrixBackground" position="52,147" size="340,525" zPosition="-10"/>
+    <widget backgroundColor="metrixPreTrans2" font="SetrixHD; 130" foregroundColor="metrixPreTrans2" noWrap="1" position="10,561" size="1273,296" source="Title" render="Label" transparent="1" valign="top" zPosition="-10"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 32" position="460,63" render="Label" size="759,65" source="Title" transparent="1"/>
+    <eLabel backgroundColor="metrixBackground" position="417,51" size="810,621" zPosition="-10"/>
     <!-- /*ClockWidget-->
     <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="239,42" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
@@ -6792,26 +6791,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="101,58" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <eLabel backgroundColor="metrixBackground" position="52,51" size="340,70" transparent="0" zPosition="-1" />
+    <eLabel backgroundColor="metrixBackground" position="52,51" size="340,70" transparent="0" zPosition="-1"/>
     <!--ClockWidget */-->
-    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/vixmenu.png" position="93,145" size="256,256" transparent="1" zPosition="2" />
-    <eLabel font="Regular; 20" foregroundColor="metrixAccent1" halign="center" position="56,329" render="Label" size="331,66" text="Support at\nwww.vuplus-support.co.uk" transparent="1" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="610,637" size="30,35" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="415,636" size="30,35" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="645,640" render="Label" size="180,26" source="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="180,26" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="180,26" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="180,26" source="key_blue" transparent="1" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_menu.png" position="1046,51" size="81,40" />
-    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_epg.png" position="1146,51" size="81,40" />
-    <widget name="lab1" position="470,270" size="200,28" font="Regular;22" halign="right" zPosition="2" backgroundColor="metrixBackground" transparent="1" valign="center" />
-    <widget name="list" position="680,center" size="300,180" foregroundColor="foreground" backgroundColor="metrixBackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
-    <widget name="lab2" position="470,145" size="200,28" font="Regular;22" halign="right" zPosition="2" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="activecam" position="680,145" size="300,105" font="Regular;20" halign="left" zPosition="2" backgroundColor="metrixBackground" transparent="1" noWrap="1" />
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/vixmenu.png" position="93,145" size="256,256" transparent="1" zPosition="2"/>
+    <eLabel font="Regular; 20" foregroundColor="metrixAccent1" halign="center" position="56,329" render="Label" size="331,66" text="Support at\nwww.vuplus-support.co.uk" transparent="1" zPosition="1"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="610,637" size="30,35"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="415,636" size="30,35"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35"/>
+	<widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_green" position="645,640" size="180,26" transparent="1" zPosition="1"/>
+	<widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_yellow" position="840,640" size="180,26" transparent="1" zPosition="1"/>
+	<widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_red" position="450,640" size="180,26" transparent="1" zPosition="1"/>
+	<widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_blue" position="1035,640" size="180,26" transparent="1" zPosition="1"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_menu.png" position="1046,51" size="81,40"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_epg.png" position="1146,51" size="81,40"/>
+    <widget backgroundColor="metrixBackground" font="Regular;22" halign="right" name="lab1" position="470,270" size="200,28" transparent="1" valign="center" zPosition="2"/>
+    <widget backgroundColor="metrixBackground" enableWrapAround="1" foregroundColor="foreground" name="list" position="680,center" scrollbarMode="showOnDemand" size="300,180" transparent="1"/>
+    <widget backgroundColor="metrixBackground" font="Regular;22" halign="right" name="lab2" position="470,145" size="200,28" transparent="1" zPosition="2"/>
+    <widget backgroundColor="metrixBackground" font="Regular;20" halign="left" name="activecam" noWrap="1" position="680,145" size="300,105" transparent="1" zPosition="2"/>
     <applet type="onLayoutFinish">
-      self["list"].instance.setItemHeight(25)
+      self[&quot;list&quot;].instance.setItemHeight(25)
     </applet>
   </screen>
   <screen name="VIXSoftcamMenu" backgroundColor="transparent" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -7499,5 +7498,212 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="180,24" source="key_blue" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="470,135" size="750,490" transparent="1" />
     <widget source="introduction" render="Label" position="57,460" size="330,200" zPosition="10" font="Regular;21" halign="center" valign="bottom" foregroundColor="metrixAccent2" transparent="1" />
+  </screen>
+  <!-- ## AutoBouquetsMaker ## -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720">
+    <eLabel backgroundColor="metrixBackground" position="264,51" size="340,320" transparent="0" zPosition="-1"/>
+    <!-- /*ClockWidget-->
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="450,401" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="290,444" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="313,415" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+    <!--ClockWidget */-->
+    <widget enableWrapAround="1" position="636,60" render="Listbox" scrollbarMode="showOnDemand" size="429,555" source="list" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{&quot;template&quot;: [	MultiContentEntryText(pos = (30,5), size = (400,50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ) ],
+				&quot;fonts&quot;: [gFont(&quot;SetrixHD&quot;,29)],
+				&quot;itemHeight&quot;: 60
+				}
+			</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,51" size="412,565" zPosition="-11"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/tuner.png" position="310,85" size="256,256"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720">
+    <eLabel backgroundColor="metrixBackground" position="264,51" size="340,320" transparent="0" zPosition="-1"/>
+    <!-- /*ClockWidget-->
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="450,401" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="290,444" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="313,415" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+    <!--ClockWidget */-->
+    <widget enableWrapAround="1" font="SetrixHD;22" itemHeight="40" name="config" position="651,61" scrollbarMode="showOnDemand" size="400,450" transparent="1"/>
+    <widget font="SetrixHD;19" halign="center" name="description" position="645,494" size="412,82" transparent="0" valign="center" zPosition="1"/>
+    <widget font="SetrixHD;22" halign="center" name="pleasewait" position="645,51" size="412,565" transparent="1" valign="center" zPosition="5"/>
+    <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,51" size="412,565" zPosition="-11"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/tuner.png" position="310,85" size="256,256"/>
+    <!-- /*Buttons-->
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="637,576" size="30,40"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="822,576" size="30,40"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_red" position="676,583" size="160,30" transparent="1" zPosition="1"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_green" position="862,583" size="160,30" transparent="1" zPosition="1"/>
+    <!--Button */-->
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720">
+    <eLabel backgroundColor="metrixBackground" position="264,51" size="340,320" transparent="0" zPosition="-1"/>
+    <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+    <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,51" size="412,565" zPosition="-11"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/tuner.png" position="310,85" size="256,256"/>
+    <widget enableWrapAround="1" position="636,60" render="Listbox" scrollbarMode="showOnDemand" size="429,490" source="list" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{&quot;template&quot;: [
+					MultiContentEntryText(pos = (30, 1), size = (400, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+					],
+					&quot;fonts&quot;: [gFont(&quot;SetrixHD&quot;, 18)],
+					&quot;itemHeight&quot;: 60
+				}
+			</convert>
+    </widget>
+    <widget font="Regular;22" halign="center" name="pleasewait" position="645,51" size="412,565" transparent="0" valign="center" zPosition="5"/>
+    <!-- /*ClockWidget-->
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="450,401" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="290,444" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="313,415" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+    <!--ClockWidget */-->
+    <!-- /*Buttons-->
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="646,554" size="30,30"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="646,586" size="30,30"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="856,554" size="30,30"/>
+    <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="856,586" size="30,30"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_red" position="686,554" size="160,30" transparent="1" zPosition="1"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_green" position="686,586" size="160,30" transparent="1" zPosition="1"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_yellow" position="896,554" size="160,30" transparent="1" zPosition="1"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_blue" position="896,586" size="160,30" transparent="1" zPosition="1"/>
+    <!--Button */-->
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="1280,720">
+  <eLabel backgroundColor="metrixBackground" position="264,51" size="340,320" transparent="0" zPosition="-1"/>
+  <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+  <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,50" size="412,566" zPosition="-11"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/icons/tuner.png" position="310,85" size="256,256"/>
+  <widget enableWrapAround="1" font="SetrixHD;18" itemHeight="40" name="config" position="651,56" scrollbarMode="showOnDemand" size="400,360" transparent="1"/>
+  <widget font="SetrixHD;16" halign="center" name="description" position="651,433" size="400,110" transparent="0" valign="center" zPosition="1"/>
+  <widget font="SetrixHD;22" halign="center" name="pleasewait" position="645,50" size="412,565" transparent="1" valign="center" zPosition="5"/>
+  <!-- /*ClockWidget-->
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="450,401" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="290,444" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="313,415" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+  <!--ClockWidget */-->
+  <!-- /*Buttons-->
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="646,554" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="646,586" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="856,554" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="856,586" size="30,30"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_red" position="686,554" size="160,30" transparent="1" zPosition="1"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_green" position="686,586" size="160,30" transparent="1" zPosition="1"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_yellow" position="896,554" size="160,30" transparent="1" zPosition="1"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_blue" position="896,586" size="160,30" transparent="1" zPosition="1"/>
+  <!--Button */-->
+</screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720">
+  <eLabel backgroundColor="metrixBackground" position="264,51" size="340,320" transparent="0" zPosition="-1"/>
+  <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+  <eLabel backgroundColor="metrixBackground" foregroundColor="metrixBackground" name="" position="645,51" size="412,565" zPosition="-11"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/icons/tuner.png" position="310,85" size="256,256"/>
+  <widget enableWrapAround="1" position="645,56" render="Listbox" scrollbarMode="showOnDemand" size="412,475" source="list" transparent="0">
+    <convert type="TemplatedMultiContent">
+				{&quot;template&quot;: [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (45, 0), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (167, 0), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					],
+					&quot;fonts&quot;: [gFont(&quot;SetrixHD&quot;, 18)],
+					&quot;itemHeight&quot;: 28
+				}
+			</convert>
+  </widget>
+<!-- /*ClockWidget-->
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="450,401" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="290,444" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="313,415" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <eLabel backgroundColor="metrixBackground" position="265,410" size="340,70" transparent="0" zPosition="-1"/>
+  <!--ClockWidget */-->
+  <!-- /*Buttons-->
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="646,554" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="646,586" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="856,554" size="30,30"/>
+  <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="856,586" size="30,30"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_red" position="686,554" size="160,30" transparent="1" zPosition="1"/>
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" name="key_green" position="686,586" size="160,30" transparent="1" zPosition="1"/>
+  <!--Button */-->
+</screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="0,0" size="1280,720">
+    <eLabel backgroundColor="metrixAccent1" name="new eLabel" position="462,119" size="720,2"/>
+    <eLabel backgroundColor="metrixBackground" position="52,147" size="340,525" zPosition="-10"/>
+    <widget backgroundColor="metrixPreTrans2" font="SetrixHD; 130" foregroundColor="metrixPreTrans2" noWrap="1" position="10,562" size="1273,296" source="Title" transparent="1" valign="top" zPosition="-20"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 32" position="460,63" render="Label" size="759,65" source="Title" transparent="1"/>
+    <widget name="waitingtext" position="0,0" size="0,0"/>
+    <eLabel backgroundColor="metrixBackground" position="417,51" size="810,621" zPosition="-10"/>
+    <!-- /*ClockWidget-->
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="239,42" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="78,83" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="101,58" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" position="52,51" size="340,70" transparent="0" zPosition="-1"/>
+    <!--ClockWidget */-->
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/vixmenu.png" position="93,145" size="256,256" transparent="1" zPosition="2"/>
+    <eLabel font="Regular; 20" foregroundColor="metrixAccent1" halign="center" position="56,329" render="Label" size="331,66" text="Support at\nwww.vuplus-support.co.uk" transparent="1" zPosition="1"/>
+    <widget enableWrapAround="1" font="Regular;20" name="list" position="470,135" scrollbarMode="showOnDemand" size="755,530" transparent="1"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="0,0" size="1280,720">
+    <eLabel backgroundColor="metrixAccent1" name="new eLabel" position="462,119" size="720,2"/>
+    <eLabel backgroundColor="metrixBackground" position="52,147" size="340,525" zPosition="-10"/>
+    <widget backgroundColor="metrixPreTrans2" font="SetrixHD; 130" foregroundColor="metrixPreTrans2" noWrap="1" position="10,562" size="1273,296" source="Title" transparent="1" valign="top" zPosition="-20"/>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 32" position="460,63" render="Label" size="759,65" source="Title" transparent="1"/>
+    <widget name="waitingtext" position="0,0" size="0,0"/>
+    <eLabel backgroundColor="metrixBackground" position="417,51" size="810,621" zPosition="-10"/>
+    <!-- /*ClockWidget-->
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="239,42" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="78,83" render="Label" size="148,29" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 20" foregroundColor="metrixAccent1" halign="right" position="101,58" render="Label" size="125,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <eLabel backgroundColor="metrixBackground" position="52,51" size="340,70" transparent="0" zPosition="-1"/>
+    <!--ClockWidget */-->
+    <ePixmap alphatest="blend" pixmap="MetrixHD/icons/vixmenu.png" position="93,145" size="256,256" transparent="1" zPosition="2"/>
+    <eLabel font="Regular; 20" foregroundColor="metrixAccent1" halign="center" position="56,329" render="Label" size="331,66" text="Support at\nwww.vuplus-support.co.uk" transparent="1" zPosition="1"/>
+    <widget enableWrapAround="1" font="Regular;19" itemHeight="28" name="about" position="570,183" scrollbarMode="showOnDemand" size="503,430" transparent="0"/>
+<widget alphatest="on" name="oealogo" position="133,460" size="177,130"/>
   </screen>
 </skin>
