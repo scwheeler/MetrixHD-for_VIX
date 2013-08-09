@@ -757,7 +757,7 @@
   <widget source="ServiceEvent" render="Progress" position="117,258" size="206,5" borderWidth="0" backgroundColor="metrixSelection" pixmap="MetrixHD/colors/00ffffff.png" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="63,283" size="320,210" font="Regular; 20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" valign="top">
+ <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" position="63,283" size="320,210" font="Regular; 24" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
@@ -1142,7 +1142,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget name="list" position="70,160" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="Event" render="Label" position="811,79" size="415,510" font="SetrixHD; 22" backgroundColor="metrixBackground2" transparent="1" valign="top">
+   <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" position="811,79" size="415,510" font="SetrixHD; 24" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="795,60" zPosition="-10" size="445,580" backgroundColor="metrixBackground2" />
@@ -1211,7 +1211,7 @@
     <widget source="Event" render="Progress" position="146,143" size="990,5" borderWidth="0" backgroundColor="metrixForeground" pixmap="MetrixHD/colors/00ffffff.png" transparent="1" zPosition="20">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="70,163" size="1153,139" font="Regular; 19" backgroundColor="metrixBackground" transparent="1" valign="top">
+   <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" position="70,163" size="1153,139" font="Regular; 24" backgroundColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="146,145" size="990,1" backgroundColor="metrixAccent1" />
@@ -1604,7 +1604,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Service" render="Label" position="276,543" size="100, 24" font="SetrixHD;20" halign="right" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="Label" position="64,158" size="317,372" font="Regular; 18" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" position="64,158" size="317,372" font="Regular; 24" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
@@ -2944,7 +2944,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Service" render="Label" position="1129,177" size="100, 24" font="SetrixHD;20" halign="right" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="Label" position="800,220" size="430,402" font="Regular; 19" backgroundColor="metrixBackground" transparent="1" valign="top">
+   <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" position="800,220" size="430,402" font="Regular; 24" backgroundColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
@@ -3698,7 +3698,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,70" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,70" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
@@ -3750,7 +3750,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,68" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,68" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
@@ -3793,7 +3793,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,68" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,68" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
@@ -3845,7 +3845,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,67" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,67" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
@@ -3889,7 +3889,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Event" render="Progress" position="131,66" size="270,5" pixmap="MetrixHD/colors/00ffffff.png" borderWidth="0" borderColor="metrixAccent2" zPosition="2" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="14,97" zPosition="1" size="509,267" font="Regular;20" foregroundColor="metrixForeground" backgroundColor="metrixBackground" shadowColor="#00605f5e" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="14,97" zPosition="1" size="509,267" font="Regular;22" foregroundColor="metrixForeground" backgroundColor="metrixBackground" shadowColor="#00605f5e" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="547,65" size="667,533" itemHeight="65" zPosition="0" CoolPico="35" CoolFont="SetrixHD;24" CoolServiceFont="SetrixHD;24" CoolEventFont="Regular;18" CoolServiceSize="405" CoolEventSize="498" CoolServicePos="18" CoolServiceHPos="4" CoolEventPos="18" CoolEventHPos="35" CoolBarPos="400" CoolBarHPos="16" CoolBarSize="150" CoolBarHigh="10" CoolTimePos="500" CoolTimeHPos="9" CoolTimeSize="150" CoolDurationPos="520" CoolDurationSize="100" CoolServiceColor="metrixForeground" CoolBarColor="metrixForeground" CoolEventColor="metrixForeground" CoolDurationColor="metrixForeground" CoolBackColorSel="metrixSelection" CoolRecPreColor="#f7c006" CoolRecColor="#e62711" CoolTunerCol="metrixForeground" CoolMarkerColor="metrixForeground" CoolCurrentCol="metrixForeground" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" />
@@ -3914,7 +3914,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Event" render="Label" position="61,60" size="322,40" font="SetrixHD; 28" foregroundColor="metrixForeground" backgroundColor="metrixBackground" transparent="1" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="61,106" size="320,460" font="Regular; 18" backgroundColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="61,106" size="320,460" font="Regular; 22" backgroundColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="list" position="422,105" size="797,505" itemHeight="35" zPosition="3" CoolFont="Regular;20" CoolServiceFont="Regular;20" CoolEventFont="Regular;20" CoolDayPos="0" CoolDayHPos="2" CoolDatePos="70" CoolDateHPos="2" CoolTimePos="150" CoolTimeHPos="2" CoolServicePos="230" CoolServiceHPos="2" CoolEventPos="500" CoolEventHPos="2" CoolDaySize="50" CoolDateSize="70" CoolTimeSize="70" CoolServiceSize="280" CoolEventSize="700" CoolServiceColor="metrixForeground" CoolEventColor="metrixForeground" CoolDateColor="metrixForeground" CoolTimeColor="metrixForeground" CoolDayColor="metrixForeground" CoolBackColor="metrixBackground" CoolBackColorSel="metrixSelection" CoolEventBackColor="metrixBackground" CoolRecEventBackColor="metrixRed" CoolRecPreColor="metrixYellow" CoolRecColor="metrixForeground" backgroundColor="transparent" scrollbarMode="showOnDemand" transparent="1" />
@@ -3980,7 +3980,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,68" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+      <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,68" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
@@ -4063,7 +4063,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/colors/00ffffff.png" />
     <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/colors/00ffffff.png" />
     <widget name="timeline_now" position="115,75" zPosition="2" size="5,450" pixmap="MetrixHD/colors/00ffffff.png" alphatest="on" />
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,68" font="Regular;17" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=5000,wrap,always=0" position="36,538" zPosition="1" size="1140,68" font="Regular;22" backgroundColor="metrixBackground" shadowColor="metrixBackground" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
