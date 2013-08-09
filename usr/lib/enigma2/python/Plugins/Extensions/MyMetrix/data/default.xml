@@ -6477,10 +6477,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="610,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="160,24" source="key_red" transparent="1" zPosition="1" />
-<eLabel backgroundColor="metrixBackground" name="new eLabel" position="645,640" size="160,24" text="Create" font="SetrixHD; 22" transparent="1" foregroundColor="foreground" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="160,24" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="160,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" size="160,24" name="key_red" transparent="1" zPosition="1" />
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="645,640" size="160,24" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" position="840,640" size="160,24" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" size="160,24" name="key_blue" transparent="1" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_menu.png" position="1146,52" size="81,40" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_epg.png" position="1035,52" size="81,40" />
     <widget name="lab1" position="470,135" size="750,70" font="SetrixHD; 22" zPosition="2" transparent="1" foregroundColor="metrixAccent1" halign="left" itemHeight="28" valign="top" />
@@ -6513,10 +6513,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="415,636" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="645,640" render="Label" size="160,24" source="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="160,24" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="160,24" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="160,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" size="160,24" name="key_red" transparent="1" zPosition="1" />
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="645,640" size="160,24" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" position="840,640" size="160,24" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" size="160,24" name="key_blue" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="450,65" size="750,560" transparent="1" foregroundColor="foreground" itemHeight="30" enableWrapAround="1" valign="top" />
     <!--  <widget name="HelpWindow" pixmap="MetrixHD/buttons/key_help.png" position="852,424" zPosition="1" size="1,1" transparent="1" alphatest="on" /> -->
   </screen>
@@ -6627,10 +6627,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="415,636" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-<eLabel backgroundColor="metrixBackground" name="new eLabel" position="645,640" size="160,24" text="Create" font="SetrixHD; 22" transparent="1" foregroundColor="foreground" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="160,24" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="160,24" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="160,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" size="160,24" name="key_red" transparent="1" zPosition="1" />
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="645,640" size="160,24" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" position="840,640" size="160,24" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" size="160,24" name="key_blue" transparent="1" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/key_menu.png" position="1146,51" size="81,40" />
     <widget name="lab1" position="470,135" size="750,50" font="Regular;22" zPosition="2" transparent="1" halign="left" itemHeight="28" valign="top" foregroundColor="metrixAccent2" />
     <widget name="list" position="470,190" size="750,440" scrollbarMode="showOnDemand" foregroundColor="foreground" transparent="1" enableWrapAround="1" itemHeight="28" />
@@ -6664,10 +6664,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="415,636" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="645,640" render="Label" size="160,24" source="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="160,24" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="160,24" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="160,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" size="160,24" name="key_red" transparent="1" zPosition="1" />
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="645,640" size="160,24" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" position="840,640" size="160,24" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" size="160,24" name="key_blue" transparent="1" zPosition="1" />
     <widget name="lab1" position="470,135" size="750,50" font="Regular;22" zPosition="2" transparent="1" halign="left" itemHeight="28" valign="top" foregroundColor="metrixAccent2" />
     <widget name="list" position="470,190" size="750,440" scrollbarMode="showOnDemand" foregroundColor="foreground" transparent="1" enableWrapAround="1" itemHeight="28" />
     <applet type="onLayoutFinish">
@@ -6700,10 +6700,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="610,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/yellow.png" position="805,637" size="30,35" />
     <ePixmap alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1000,637" size="30,35" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" render="Label" size="160,24" source="key_red" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="645,640" render="Label" size="160,24" source="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="left" position="840,640" render="Label" size="160,24" source="key_yellow" transparent="1" zPosition="1" />
-    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" render="Label" size="160,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="450,640" size="160,24" name="key_red" transparent="1" zPosition="1" />
+  <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="645,640" size="160,24" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD;22" halign="left" position="840,640" size="160,24" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="metrixBackground" font="SetrixHD; 22" halign="left" position="1035,640" size="160,24" name="key_blue" transparent="1" zPosition="1" />
     <widget name="lab1" position="470,135" size="750,60" font="Regular;22" zPosition="2" transparent="1" halign="left" itemHeight="28" valign="top" foregroundColor="metrixAccent1" />
     <widget source="list" render="Listbox" position="470,200" size="750,425" foregroundColor="foreground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="0" zPosition="5">
       <convert type="TemplatedMultiContent">
