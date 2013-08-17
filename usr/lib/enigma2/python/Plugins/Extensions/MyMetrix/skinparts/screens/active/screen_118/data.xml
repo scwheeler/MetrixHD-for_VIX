@@ -17,7 +17,7 @@
   <widget backgroundColor="metrixBackground" font="SetrixHD;20" halign="right" position="276,543" render="Label" size="100, 24" source="Service" transparent="1">
     <convert type="MovieInfo">FileSize</convert>
   </widget>
-  <widget backgroundColor="metrixBackground" font="Regular; 24" foregroundColor="metrixAccent1" position="63,283" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=3500,wrap,always=0" size="320,210" source="Service" transparent="1" valign="top">
+  <widget backgroundColor="metrixBackground" font="Regular; 18" foregroundColor="metrixAccent1" position="63,283" render="Label" size="320,210" source="Service" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>    <!-- /*Buttons-->
     <ePixmap name="new ePixmap" pixmap="MetrixHD/buttons/key_menu.png" position="1125,630" size="81,40"/>
