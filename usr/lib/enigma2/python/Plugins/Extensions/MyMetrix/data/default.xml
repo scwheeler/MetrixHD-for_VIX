@@ -1941,6 +1941,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="FEC:" position="490,560" size="150,25" font="SetrixHD;21" backgroundColor="metrixBackground" transparent="1" />
     <widget name="fec_value" position="650,560" size="150,25" font="SetrixHD;21" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+       <ePixmap pixmap="MetrixHD/buttons/red.png" position="415,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/green.png" position="597,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="771,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/blue.png" position="941,635" size="30,40" alphatest="blend" />
+    <widget name="key_red" position="453,640" size="140,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_green" position="637,640" size="130,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_yellow" position="810,640" size="130,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_blue" position="981,640" size="130,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
   </screen>
   <screen name="RadioInfoBar" position="0,515" size="1280,200" title="Radio" zPosition="-9" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="0,0" zPosition="-10" size="1280,200" backgroundColor="metrixBackground" transparent="1" />
