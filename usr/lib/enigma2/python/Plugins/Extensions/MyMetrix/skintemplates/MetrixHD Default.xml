@@ -7160,35 +7160,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel font="Regular; 20" foregroundColor="metrixAccent1" halign="center" position="56,329" render="Label" size="331,66" text="Support at\nwww.vuplus-support.co.uk" transparent="1" zPosition="1" />
     <widget name="list" font="Regular;16" position="470,135" size="750,530" transparent="1" scrollbarMode="showOnDemand" itemHeight="30" enableWrapAround="1" />
   </screen>
-  <screen name="JobView" backgroundColor="transparent" position="center,center" size="1280,720" flags="wfNoBorder">
-    <eLabel backgroundColor="metrixBackground" position="390,102" size="500,490" zPosition="-10" />
-    <widget source="job_name" render="Label" position="400,112" size="480,60" font="Regular;28" valign="center" transparent="1" />
-    <widget source="job_task" render="Label" position="400,170" size="480,50" font="Regular;23" transparent="1" />
-    <widget source="job_progress" render="Progress" position="400,262" size="480,36" borderWidth="2" backgroundColor="un5678a4" />
-    <widget source="job_progress" render="Label" position="400,262" size="280,36" font="Regular;28" foregroundColor="foreground" zPosition="2" halign="left" transparent="1">
-      <convert type="ProgressToText" />
-    </widget>
-    <widget source="job_status" render="Label" position="center,313" size="480,30" font="Regular;23" transparent="1" />
-    <widget name="config" position="center,380" size="480,130" font="Regular;23" transparent="1" />
-    <widget source="cancelable" render="Pixmap" pixmap="MetrixHD/buttons/red.png" position="400,512" size="35,40" zPosition="-1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="cancelable" render="FixedLabel" text="Cancel" position="440,520" size="200,26" font="Regular;20" halign="left" backgroundColor="metrixBackground" transparent="1">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="finished" render="Pixmap" pixmap="MetrixHD/buttons/green.png" position="640,512" size="35,40" zPosition="-1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="finished" render="FixedLabel" text="OK" position="680,520" size="200,26" backgroundColor="metrixBackground" transparent="1" zPosition="1" font="Regular;22" halign="left">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="backgroundable" render="Pixmap" pixmap="MetrixHD/buttons/blue.png" position="510,550" size="35,40" zPosition="-1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="550,557" size="280,26" foregroundColor="grey" backgroundColor="metrixBackground" transparent="1" zPosition="1" font="Regular;22" halign="left">
-      <convert type="ConditionalShowHide" />
-    </widget>--&gt;
-  </screen>
+ <screen backgroundColor="transparent" flags="wfNoBorder" name="JobView" position="center,center" size="1280,720">  <widget font="Regular; 35" position="20,662" render="Label" size="302,53" source="job_name" transparent="1" valign="center" />  <widget font="Regular; 27" position="358,673" render="Label" size="160,35" source="job_task" transparent="1" foregroundColor="metrixAccent2" backgroundColor="metrixBackground" />  <widget backgroundColor="un5678a4" borderWidth="2" position="557,672" render="Progress" size="480,36" source="job_progress" />  <widget font="Regular;28" halign="left" position="731,676" render="Label" size="200,36" source="job_progress" transparent="1" zPosition="2">    <convert type="ProgressToText" />  </widget> <eLabel backgroundColor="metrixBackground" position="center,655" size="1279,65" zPosition="-10" />     <widget alphatest="blend" pixmap="MetrixHD/buttons/red.png" position="400,512" render="Pixmap" size="35,40" source="cancelable" zPosition="-1">    <convert type="ConditionalShowHide" />  </widget>    <widget alphatest="blend" pixmap="MetrixHD/buttons/green.png" position="640,512" render="Pixmap" size="35,40" source="finished" zPosition="-1">    <convert type="ConditionalShowHide" />  </widget>    <widget alphatest="blend" pixmap="MetrixHD/buttons/blue.png" position="1107,682" render="Pixmap" size="35,40" source="backgroundable" zPosition="-1">    <convert type="ConditionalShowHide" />  </widget>  <widget backgroundColor="metrixBackground" font="Regular;22" foregroundColor="grey" halign="left" position="1146,662" render="FixedLabel" size="130,56" source="backgroundable" text="Continue in background" transparent="1" zPosition="1">    <convert type="ConditionalShowHide" />  </widget>  <!--  /* ClockWidget  -->  <eLabel backgroundColor="metrixBackground2" position="962,43" size="114,66" transparent="0" zPosition="-2" />  <widget backgroundColor="metrixBackground" font="SetrixHD; 60" halign="left" position="1086,31" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">    <convert type="ClockToText">Default</convert>  </widget>  <widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" position="967,77" render="Label" size="102,29" source="global.CurrentTime" transparent="1">    <convert type="ClockToText">Format:%e. %b</convert>  </widget>  <widget backgroundColor="metrixBackground2" font="Regular; 18" foregroundColor="metrixAccent1" halign="right" noWrap="1" position="964,47" render="Label" size="104,30" source="global.CurrentTime" transparent="1">    <convert type="ClockToText">Format:%A</convert>  </widget>  <eLabel backgroundColor="metrixBackground" position="1076,40" size="158,72" transparent="0" zPosition="-1" />  <!-- ClockWidget */ -->
+  </screen>  
   <screen name="AudioSelection" backgroundColor="transparent" position="0,0" size="1280,720" flags="wfNoBorder">
     <eLabel backgroundColor="metrixBackground" position="center,102" size="520,520" zPosition="-10" />
     <widget source="Title" render="Label" position="400,112" size="480,40" font="SetrixHD; 28" valign="center" transparent="1" halign="center" />
@@ -7211,7 +7184,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 					{"default": (25, [
 						MultiContentEntryText(pos = (0, 0),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
 						MultiContentEntryText(pos = (40, 0),	size = (60, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
+        MultiContentEntryText(pos = (110, 0), size =
+        (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
 						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
 						MultiContentEntryText(pos = (450, 4), size = (15, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
