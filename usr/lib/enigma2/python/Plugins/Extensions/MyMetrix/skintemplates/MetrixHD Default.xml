@@ -1,6 +1,6 @@
 <skin>
   <!-- MetrixHD v2.3 by iMaxxx for VTI v5.0.xxx -->
-  <!-- recommended to use only with XPicons (transparent light) -->
+  <!-- recommended to use only with Picons (transparent light) -->
   <!-- You can modify and redistribute it as long as you keep this License and the original author for the skin and all of your modifications -->
   <!-- MOD by scwheeler & sowa for OpenVIX and from http://www.world-of-satellite.com -->
   <output id="0">
@@ -785,7 +785,7 @@
   <eLabel position="51,599" zPosition="-1" size="340,70" backgroundColor="metrixBackground" transparent="0" />
   <!--ClockWidget */-->
   
-  <widget source="ServiceEvent" render="XPiconChannel" position="112,61" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
+  <widget source="ServiceEvent" render="Picon" position="112,61" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
 
 </screen>
   <screen name="ChannelSelectionRadio" position="0,0" size="1280,520" title="Radio Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -1075,7 +1075,7 @@
   </screen>
   <screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="51,51" zPosition="-10" size="340,525" backgroundColor="metrixBackground" />
-    <widget source="Title" render="XPicon" position="117,64" size="220,132" zPosition="5" transparent="1" alphatest="blend">
+    <widget source="Title" render="Picon" position="117,64" size="220,132" zPosition="5" transparent="1" alphatest="blend">
       <convert type="MetrixRefString">CurrentRef</convert>
     </widget>
     <eLabel position="416,51" zPosition="-10" size="810,619" backgroundColor="metrixBackground" />
@@ -1786,7 +1786,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="NumberZapExt" position="293,243" size="700,165" title="Channel" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
     <eLabel text="QuickZap" position="137,10" size="312,48" zPosition="3" font="SetrixHD; 40" transparent="1" halign="right" />
-    <widget name="chPicon" position="466,17" size="220,132" transparent="1" zPosition="1" alphatest="blend" />
+    <widget name="Picon" position="466,17" size="220,132" transparent="1" zPosition="1" alphatest="blend" />
     <widget name="number" position="24,72" size="122,27" halign="left" font="Regular; 20" transparent="1" />
     <widget name="chNum" position="146,72" size="240,27" halign="left" font="Regular; 20" transparent="1" />
     <widget name="channel" position="24,99" size="122,26" halign="left" font="Regular; 20" transparent="1" />

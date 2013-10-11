@@ -28,7 +28,7 @@
      <!-- /*STYLE NEW -->
   <eLabel backgroundColor="metrixBackground" name="InfoBar" position="-1,560" size="1283,160" zPosition="-10" />
   <eLabel backgroundColor="metrixAccent1" name="new eLabel" position="288,615" size="950,1" />
-  <widget alphatest="blend" position="40,570" render="XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget alphatest="blend" position="40,570" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget backgroundColor="metrixBackground" font="SetrixHD; 40" halign="left" noWrap="1" position="286,558" render="Label" size="788,56" source="session.CurrentService" transparent="1">

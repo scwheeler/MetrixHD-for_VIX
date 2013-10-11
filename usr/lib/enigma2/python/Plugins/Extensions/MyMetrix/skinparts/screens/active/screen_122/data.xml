@@ -50,7 +50,6 @@
   <eLabel backgroundColor="metrixBackground" position="51,599" size="340,70" transparent="0" zPosition="-1"/>
   <!--ClockWidget */-->
   
-  <widget alphatest="blend" position="112,61" render="XPiconChannel" size="220,132" source="ServiceEvent" transparent="1" zPosition="2"/>
-
+  <widget alphatest="blend" position="112,61" render="Picon" size="220,132" source="ServiceEvent" transparent="1" zPosition="2"/>
 </screen>
  
