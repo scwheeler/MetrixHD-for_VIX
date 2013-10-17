@@ -5057,7 +5057,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/plugin.png" transparent="1" alphatest="blend" />
   </screen>
-<screen backgroundColor="transparent" flags="wfNoBorder" name="UpdatePlugin" position="0,0" size="1280,720" title="Software Update...">  <eLabel backgroundColor="metrixBackground" position="center,655" size="1279,65" zPosition="-10" />  <widget backgroundColor="metrixBackground" font="SetrixHD; 50" halign="left" position="1103,28" render="Label" size="140,60" source="global.CurrentTime" transparent="1">    <convert type="ClockToText">Default</convert>  </widget>  <widget backgroundColor="metrixBackground" font="Regular; 15" foregroundColor="metrixAccent1" halign="right" position="931,37" render="Label" size="161,27" source="global.CurrentTime" transparent="1">    <convert type="ClockToText">Format:%A</convert>  </widget>  <widget backgroundColor="metrixBackground" font="Regular; 16" foregroundColor="metrixAccent1" halign="right" position="931,64" render="Label" size="161,29" source="global.CurrentTime" transparent="1">    <convert type="ClockToText">Format:%e. %b</convert>  </widget>  <eLabel backgroundColor="metrixBackground" font="Regular; 35" position="20,668" size="302,53" text="Software Update..." transparent="1" />    <widget borderWidth="1" name="activityslider" position="557,688" size="680,15" transparent="1" />
+<screen backgroundColor="transparent" flags="wfNoBorder" name="UpdatePlugin" position="0,0" size="1280,720" title="Software Update...">  <eLabel backgroundColor="metrixBackground" position="center,655" size="1279,65" zPosition="-10" /> <!--   /* ClockWidget   -->
+<eLabel position="962,43" zPosition="-2" size="114,66" backgroundColor="metrixBackground2" transparent="0"/>
+<widget source="global.CurrentTime" render="Label" position="1086,31" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
+<convert type="ClockToText">Default</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="967,77" size="102,29" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+<convert type="ClockToText">Format:%e. %b</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="964,47" size="104,30" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1" noWrap="1">
+<convert type="ClockToText">Format:%A</convert>
+</widget>
+<eLabel position="1076,40" zPosition="-1" size="158,72" backgroundColor="metrixBackground" transparent="0"/>
+<!--  ClockWidget */  -->
+    <eLabel backgroundColor="metrixBackground" font="Regular; 35" position="20,668" size="302,53" text="Software Update..." transparent="1" />    <widget borderWidth="1" name="activityslider" position="557,688" size="680,15" transparent="1" />
     <widget backgroundColor="metrixBackground" foregroundColor="metrixAccent2" font="Regular; 25" position="358,678" render="Label" size="160,35" source="status" transparent="1" />  </screen>
    <!-- WebInterface -->
   <screen name="WebIfConfigScreen" position="0,0" size="1280,720" title="Main Setup" flags="wfNoBorder" backgroundColor="transparent">
