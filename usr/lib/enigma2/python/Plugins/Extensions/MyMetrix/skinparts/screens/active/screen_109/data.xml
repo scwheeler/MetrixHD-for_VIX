@@ -4,7 +4,7 @@
       <convert type="ClockToText">Default</convert>
     </widget>
         <widget name="ServiceBackgroundColor" backgroundColor="metrixBackground" />
-    <widget source="Title" render="Label" position="200,163" size="850,43" font="Regular;25" halign="center" transparent="1" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" zPosition="1" />
+    <widget source="Title" render="Label" position="200,175" size="850,43" font="Regular;25" halign="center" transparent="1" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" zPosition="1" />
     <widget name="bouquetlist" position="70,80" size="1150,110" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
      <widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="870,77" size="350,25" font="RegularLight; 17" halign="right" backgroundColor="metrixBackground" transparent="1" foregroundColor="grey">
@@ -29,8 +29,8 @@
       <convert type="EventTime">Progress</convert>   
     </widget>
     <widget name="lab1" position="70,235" size="1150,390" halign="center" valign="center" zPosition="20" backgroundColor="metrixBackground" transparent="0" />
-    <widget name="timeline_text" position="70,196" size="1150,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="list" position="70,235" size="1150,390" itemHeight="60" EntryBorderColor="grey" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timeline_text" position="70,210" size="1150,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="list" position="70,235" size="1150,390" itemHeight="60" EntryBorderColor="grey" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD_MOD/timeline.png" />
     <widget name="timeline1" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD_MOD/timeline.png" />
     <widget name="timeline2" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD_MOD/timeline.png" />
