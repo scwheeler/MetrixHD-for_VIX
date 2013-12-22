@@ -31,7 +31,7 @@
   <widget backgroundColor="metrixBackground" font="SetrixHD; 40" halign="left" noWrap="1" position="286,558" render="Label" size="788,56" source="session.CurrentService" transparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
-   <widget backgroundColor="metrixBackground" font="Regular; 22" position="1101,623" render="Label" size="62,25" source="session.CurrentService" transparent="1" halign="top">
+<widget backgroundColor="metrixBackground" font="Regular; 22" halign="right" position="1063,623" render="Label" size="100,25" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <eLabel backgroundColor="metrixBackground" font="Regular; 22" position="1164,623" size="15,25" text="/" transparent="1" halign="top" />
