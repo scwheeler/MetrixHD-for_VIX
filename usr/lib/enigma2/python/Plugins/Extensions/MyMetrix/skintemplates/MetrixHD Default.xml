@@ -17,7 +17,7 @@
     <color name="grey" value="#00bbbbbb" />
     <color name="metrixAccent1" value="#00ffffff" />
     <color name="metrixAccent2" value="#00bbbbbb" />
-    <color name="metrixBackground" value="#40000000" />
+    <color name="metrixBackground" value="#1a000000" />
     <color name="metrixBackground2" value="#40149baf" />
     <color name="metrixBlue" value="#001677d2" />
     <color name="metrixCyan" value="#00149baf" />
