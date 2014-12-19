@@ -1,0 +1,50 @@
+<skinpartwidget screenname="SecondInfoBar">
+  <!-- /* ICON BAR NEW METRIX FULL HD -->
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_hbbtv_off.png" position="1461,1021" size="96,36" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_hbbtv_on.png" position="1461,1021" render="Pixmap" size="96,36" source="session.CurrentService" zPosition="10">
+    <convert type="ServiceInfoEX">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_dolby_off.png" position="1619,1023" size="51,34" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_dolby_on.png" position="1619,1023" render="Pixmap" size="51,34" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_format_off.png" position="1762,1023" size="64,34" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_format_on.png" position="1762,1023" render="Pixmap" size="64,34" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_txt_off.png" position="1566,1023" size="44,34" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_txt_on.png" position="1566,1023" render="Pixmap" size="44,34" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_hd_off.png" position="1679,1021" size="74,36" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_hd_on.png" position="1679,1021" render="Pixmap" size="74,36" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">721,1980</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_crypt_off.png" position="1835,1022" size="56,35" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_crypt_on.png" position="1835,1022" render="Pixmap" size="56,35" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/subtitle_on.png" position="1406,1023" render="Pixmap" size="46,34" source="session.CurrentService" zPosition="2">
+    <convert type="PumServiceInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/subtitle_off.png" position="1406,1023" size="46,34" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_audio_on.png" position="1269,1029" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
+    <convert type="PumServiceInfo">AudioTracksAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_audio_off.png" position="1269,1029" size="52,30" zPosition="1" />
+  <widget alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_rec_on.png" position="1330,1023" render="Pixmap" size="67,34" source="session.RecordState" zPosition="2">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/skinparts/2296/ico_rec_off.png" position="1330,1023" size="67,34" zPosition="1" />
+  <!-- ICON BAR NEW METRIX FULL HD */ -->
+</skinpartwidget>
+  
