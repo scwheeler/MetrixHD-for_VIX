@@ -3,4 +3,4 @@ MetrixHD for VIX
 
 Original Skin by iMaxxx
 
-Modded for Vix by scwheeler and Sowa
+1080 & Vix MOD by scwheeler
